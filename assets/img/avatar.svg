@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-labelledby="t">
+  <title id="t">Flat avatar of Atiqur Rahman</title>
+  <rect width="400" height="400" fill="#f3f4f6"/>
+
+  <!-- neck -->
+  <rect x="186" y="250" width="72" height="96" rx="28" fill="#e9c29f"/>
+
+  <!-- teal crew-neck t-shirt (cropped at the shoulders) -->
+  <path d="M10 420 Q22 352 118 336 L180 326 Q222 364 264 326 L326 336 Q422 352 434 420 Z" fill="#3fbfb2"/>
+  <path d="M180 326 Q222 364 264 326" fill="none" stroke="#2fa89c" stroke-width="12" stroke-linecap="round"/>
+
+  <!-- round soft face -->
+  <ellipse cx="222" cy="182" rx="100" ry="108" fill="#e9c29f"/>
+
+  <!-- short black hair swept to one side, defined hairline -->
+  <path d="M120 200 Q104 70 222 57 Q344 50 328 190 Q319 162 307 151 L302 173 Q270 124 196 118 Q156 118 140 140 Q130 160 131 200 Z" fill="#1f1d24"/>
+
+  <!-- thin curved brows, dot eyes, closed smile -->
+  <path d="M162 170 Q180 160 199 167" fill="none" stroke="#1f1d24" stroke-width="4.5" stroke-linecap="round"/>
+  <path d="M246 167 Q265 160 283 170" fill="none" stroke="#1f1d24" stroke-width="4.5" stroke-linecap="round"/>
+  <circle cx="181" cy="197" r="7.5" fill="#1f1d24"/>
+  <circle cx="263" cy="197" r="7.5" fill="#1f1d24"/>
+  <path d="M203 237 Q222 250 242 237" fill="none" stroke="#9a5a4a" stroke-width="4.5" stroke-linecap="round"/>
+</svg>
