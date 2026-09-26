@@ -28,10 +28,11 @@ window.PORTFOLIO = {
   ],
 
   skills: [
-    { group: "Backend", items: ["C#", "ASP.NET Core", "ASP.NET MVC", "Web API", "Entity Framework", "ADO.NET", "CQRS", "Event-driven", "gRPC", "MassTransit", "RabbitMQ", "Redis", "FusionCache", "Webhooks", "SignalR", "Hangfire", "xUnit"] },
+    { group: "Backend", items: ["C#", "ASP.NET Core", "ASP.NET MVC", "Web API", "Entity Framework", "ADO.NET", "CQRS", "Event-driven", "Distributed services", "gRPC", "MassTransit", "RabbitMQ", "Redis", "FusionCache", "Webhooks", "SignalR", "Hangfire", "xUnit"] },
     { group: "Frontend", items: ["Angular", "AngularJS", "JavaScript", "jQuery", "HTML5", "CSS3"] },
     { group: "Database", items: ["SQL Server", "Oracle", "MongoDB"] },
     { group: "Cloud & DevOps", items: ["Microsoft Azure (AZ-104)", "Azure Functions", "Event Grid", "Virtual Machines", "Storage", "Docker", "Git", "CI/CD pipelines"] },
+    { group: "Observability & Analytics", items: ["OpenTelemetry", "Datadog", "Seq", "Matomo"] },
     { group: "Security & Identity", items: ["OAuth2", "OpenID Connect", "PKCE", "JWT", "Keycloak", "SAML / SSO", "Pentest remediation"] },
     { group: "AI Tools", items: ["GitHub Copilot", "Claude AI", "BMAD-METHOD", "Spec-driven development", "Gemini API"] },
     { group: "Reporting", items: ["RDLC", "Crystal Reports", "HTML to PDF (Gotenberg)"] }
@@ -41,14 +42,29 @@ window.PORTFOLIO = {
     {
       title: "Software Engineer",
       company: "SELISE Digital Platforms",
-      meta: "Insurance & Banking for Switzerland",
+      meta: "",
       period: "Feb 2023 — Present",
-      points: [
-        "Refactored a legacy monolith into domain-driven microservices, delivered a production-ready PDF Generation Service and collaborated with Swiss/German clients on iterative enhancements.",
-        "Built and published shared NuGet libraries (FusionCache wrapper, centralized exception handling), automated MongoDB migrations and standardized a reusable multi-tenant architecture.",
-        "Implemented gRPC communication and MassTransit event workflows, securing the platform with OpenID Connect, PKCE, JWT and modular permission management.",
-        "Led security pentest remediation — fixed CORS, dependency and token-handling vulnerabilities across the platform.",
-        "Built integrations for Autom (Teams notifications via webhook/Power Automate) and a malware-scan pipeline (Azure Function → Event Grid → RabbitMQ)."
+      points: [],
+      projects: [
+        {
+          name: "PDF Generator – Event-Driven Document Generation Microservice",
+          client: "Standalone microservice (SELISE Group)",
+          points: [
+            "Architected a standalone, event-driven PDF Generator microservice integrating STS token authentication, dynamic JSON schema-based metadata generation, a dynamic Liquid template engine, Gotenberg, MassTransit, Redis, webhooks and a notification client."
+          ]
+        },
+        {
+          name: "EcoHubProcess (Insurer–Broker File Exchange Platform)",
+          client: "Team: EcoHubProcess (SELISE Group) | For the Swiss Insurance & Broker Market",
+          points: [
+            "Contributed to system context and container-level architecture design of EcoHubProcess, a microservice-based platform enabling brokers and insurers to securely exchange XML-based business processes via DXP.",
+            "Designed a CQRS-based architecture around the core broker–insurer workflow — file exchange with acknowledgment — using a Scheduler Job, Background Job and High-Priority Background Job over RabbitMQ/MassTransit to separate command processing from query/read paths for scalability and resilience.",
+            "Designed and developed backend services (C#, .NET 8, Web API, Entity Framework, MassTransit/RabbitMQ) and responsive frontend interfaces (Angular 21, TypeScript, HTML, CSS).",
+            "Designed integration points with core ecosystem services — SELISE Blocks, EcoHub, SendGrid and Gotenberg — positioning EcoHubProcess as a well-bounded system within the broader EcoHub ecosystem.",
+            "Collaborated with product and architecture teams to translate epic-level requirements into implementation plans, following Agile/Scrum practices (quarterly planning, sprint planning, daily scrums) for iterative delivery.",
+            "Deployed and operated services on Microsoft Azure (Kubernetes/AKS) with Azure B2C authentication, ensuring secure, reliable data exchange across insurers, brokers and software vendors."
+          ]
+        }
       ]
     },
     {

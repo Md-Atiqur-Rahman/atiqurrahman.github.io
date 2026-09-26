@@ -245,7 +245,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 .tl-points li { position: relative; padding-left: 20px; color: var(--muted); }
 .tl-points li + li { margin-top: 8px; }
 .tl-points li::before { content: "▹"; position: absolute; left: 0; color: var(--accent); }
-.tl-project + .tl-project { margin-top: 18px; }
+.tl-project + .tl-project, .tl-points + .tl-project { margin-top: 18px; }
 .tl-project h4 { font-size: 1rem; }
 .tl-project .tl-client { font-size: 0.8rem; color: var(--accent-2); margin: 2px 0 10px; }
 
