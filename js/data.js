@@ -5,18 +5,18 @@ window.PORTFOLIO = {
   role: "Software Engineer · .NET / C#",
   location: "Dhaka, Bangladesh",
   tagline:
-    "I architect and deliver scalable, event-driven microservices and secure web platforms with ASP.NET Core and Angular.",
+    "I build scalable, event-driven microservices and secure web applications with .NET and Angular — clean, well-tested and ready for production.",
   photo: "assets/img/profile.png", // leave the file missing to show the initials avatar
-  resume: "", // e.g. "assets/resume.pdf" — button hidden while empty
+  resume: "assets/Md-Atiqur-Rahman-CV.pdf", // "Download CV" buttons are hidden while empty
 
   about: [
-    "I'm a software engineer with 8+ years of experience building high-performance web applications with ASP.NET Core and Angular on SQL Server, PostgreSQL, Oracle and MongoDB.",
+    "I'm a software engineer building high-performance web applications with ASP.NET Core and Angular on SQL Server, Oracle and MongoDB.",
     "At SELISE Digital Platforms I work with Swiss and German clients — breaking legacy monoliths into domain-driven microservices, designing secure APIs with OAuth2, OIDC and PKCE, building third-party integrations (Teams, calendar, malware scanning) and leading security remediation across the platform.",
     "I enjoy solution architecture, empowering teams to take ownership, and using emerging tools — including AI-agentic, spec-driven development — to solve complex, real-world problems."
   ],
 
   stats: [
-    { value: "8+", label: "Years experience" },
+    { value: "12", label: "Featured projects" },
     { value: "3", label: "Companies" },
     { value: "3", label: "Microsoft certifications" }
   ],
@@ -28,7 +28,7 @@ window.PORTFOLIO = {
   ],
 
   skills: [
-    { group: "Backend & Microservices", items: ["C#", "ASP.NET Core", "ASP.NET MVC", "Web API", "Entity Framework", "ADO.NET", "CQRS", "Event-driven", "gRPC", "MassTransit", "RabbitMQ", "Redis", "FusionCache", "Webhooks", "SignalR", "Hangfire", "xUnit"] },
+    { group: "Backend", items: ["C#", "ASP.NET Core", "ASP.NET MVC", "Web API", "Entity Framework", "ADO.NET", "CQRS", "Event-driven", "gRPC", "MassTransit", "RabbitMQ", "Redis", "FusionCache", "Webhooks", "SignalR", "Hangfire", "xUnit"] },
     { group: "Frontend", items: ["Angular", "AngularJS", "JavaScript", "jQuery", "HTML5", "CSS3"] },
     { group: "Database", items: ["SQL Server", "Oracle", "MongoDB"] },
     { group: "Cloud & DevOps", items: ["Microsoft Azure (AZ-104)", "Azure Functions", "Event Grid", "Virtual Machines", "Storage", "Docker", "Git", "CI/CD pipelines"] },
@@ -41,7 +41,7 @@ window.PORTFOLIO = {
     {
       title: "Software Engineer",
       company: "SELISE Digital Platforms",
-      meta: "Insurance & Banking",
+      meta: "Insurance & Banking for Switzerland",
       period: "Feb 2023 — Present",
       points: [
         "Refactored a legacy monolith into domain-driven microservices, delivered a production-ready PDF Generation Service and collaborated with Swiss/German clients on iterative enhancements.",
@@ -56,9 +56,31 @@ window.PORTFOLIO = {
       company: "ERA InfoTech Ltd.",
       meta: "",
       period: "Nov 2019 — Jan 2023",
-      points: [
-        "Delivered a large-scale government project using ASP.NET MVC & Oracle — new features, optimized complex queries and high-accuracy RDLC reports.",
-        "Contributed to a national Remittance Solution using ASP.NET Core & Angular, improving UI/UX and backend workflow functionality."
+      points: [],
+      // projects delivered in this role, each with its own responsibilities
+      projects: [
+        {
+          name: "Electronic Information and Database Management System",
+          client: "For Government",
+          points: [
+            "Actively participated in system analysis, requirement gathering, and architecture design to deliver a secure and scalable intelligence management platform.",
+            "Designed and developed robust backend services using C#, ASP.NET MVC, ASP.NET Web API and Entity Framework, and implemented dynamic frontend interfaces with Razor, HTML, CSS, Bootstrap, JavaScript and jQuery.",
+            "Created MIS reports using procedures, functions, views and scheduler jobs.",
+            "Collaborated closely with software development and testing teams to ensure solutions met client requirements for functionality, performance and scalability.",
+            "Deployed the system on Windows Server, ensuring reliable production operations."
+          ]
+        },
+        {
+          name: "e-Remittance",
+          client: "For Bank Asia Limited",
+          points: [
+            "Participated in requirement analysis, system architecture decisions and integration planning, ensuring high-performance remittance services.",
+            "Developed scalable backend APIs using C#, ASP.NET Core, ASP.NET Core Web API and Entity Framework Core, with frontend functionality in Angular.",
+            "Implemented RDLC reports to provide actionable insights and facilitate operational efficiency.",
+            "Deployed the system on UAT and production servers (Oracle Linux), configuring Nginx as a reverse proxy for optimized performance.",
+            "Engaged with end-users to gather feedback, refine features and enhance system usability."
+          ]
+        }
       ]
     },
     {
@@ -110,7 +132,7 @@ window.PORTFOLIO = {
     },
     {
       type: "professional",
-      name: "National Remittance Solution",
+      name: "e-Remit for Bank Asia",
       description: "Microservice-based remittance platform — contributed UI/UX improvements, scheduled jobs and backend workflow enhancements.",
       tags: ["ASP.NET Core", "Angular 9", "Material", "Quartz", "Oracle 11g"],
       github: "",
@@ -118,8 +140,8 @@ window.PORTFOLIO = {
     },
     {
       type: "professional",
-      name: "Government Management System",
-      description: "Large-scale government application: new modules, tuned Oracle queries and high-accuracy RDLC reporting.",
+      name: "Electronic Information and Database Management System (Government project)",
+      description: "Electronic Information and Database Management System with enterprise-level security.",
       tags: ["ASP.NET MVC", "Oracle", "RDLC"],
       github: "",
       live: ""
