@@ -138,9 +138,10 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
   content: ""; position: absolute; inset: -40% -20% auto auto; width: 620px; height: 620px;
   background: radial-gradient(circle, var(--accent-soft), transparent 65%); pointer-events: none;
 }
-.hero-inner { position: relative; display: grid; grid-template-columns: 1fr 1.25fr; gap: 32px; align-items: center; }
+.hero-inner { position: relative; display: grid; grid-template-columns: 1.15fr 1fr; gap: 32px; align-items: center; }
 .eyebrow { color: var(--accent-2); font-size: 0.9rem; margin-bottom: 14px; }
-.hero h1 { font-size: clamp(2.2rem, 5vw, 3.6rem); font-weight: 800; letter-spacing: -0.02em; }
+/* the heading renders ~12.1x its font-size wide; size it to always fit its column on one line */
+.hero h1 { font-size: min(2.75rem, calc(4.1vw - 4px)); font-weight: 800; letter-spacing: -0.02em; white-space: nowrap; }
 .hero-role { font-size: clamp(1.1rem, 2.2vw, 1.4rem); color: var(--muted); font-weight: 600; margin-top: 12px; }
 .hero-tagline { max-width: 560px; margin-top: 18px; color: var(--muted); font-size: 1.05rem; }
 .hero-cta { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
@@ -312,6 +313,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outlin
 
 /* ---------- Responsive ---------- */
 @media (max-width: 900px) {
+  .hero h1 { font-size: min(3.2rem, calc((100vw - 40px) / 12.8)); }
   .hero-inner, .about-grid, .edu-grid { grid-template-columns: 1fr; }
   .avatar { width: 160px; height: 160px; font-size: 3rem; }
   .hero-ill { max-width: 520px; }
