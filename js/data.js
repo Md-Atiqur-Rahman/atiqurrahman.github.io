@@ -59,7 +59,7 @@ window.PORTFOLIO = {
           points: [
             "Contributed to system context and container-level architecture design of EcoHubProcess, a microservice-based platform enabling brokers and insurers to securely exchange XML-based business processes via DXP.",
             "Designed a CQRS-based architecture around the core broker–insurer workflow — file exchange with acknowledgment — using a Scheduler Job, Background Job and High-Priority Background Job over RabbitMQ/MassTransit to separate command processing from query/read paths for scalability and resilience.",
-            "Designed and developed backend services (C#, .NET 8, Web API, Entity Framework, MassTransit/RabbitMQ) and responsive frontend interfaces (Angular 21, TypeScript, HTML, CSS).",
+            "Designed and developed backend services (C#, .NET 10, Web API, Entity Framework, MassTransit/RabbitMQ) and responsive frontend interfaces (Angular 21, TypeScript, HTML, CSS).",
             "Designed integration points with core ecosystem services — SELISE Blocks, EcoHub, SendGrid and Gotenberg — positioning EcoHubProcess as a well-bounded system within the broader EcoHub ecosystem.",
             "Collaborated with product and architecture teams to translate epic-level requirements into implementation plans, following Agile/Scrum practices (quarterly planning, sprint planning, daily scrums) for iterative delivery.",
             "Deployed and operated services on Microsoft Azure (Kubernetes/AKS) with Azure B2C authentication, ensuring secure, reliable data exchange across insurers, brokers and software vendors."
@@ -116,9 +116,9 @@ window.PORTFOLIO = {
   projects: [
     {
       type: "professional",
-      name: "Insurance File Process",
-      description: "Event-driven microservice platform for insurance file processing on .NET 10, with CQRS, gRPC and MassTransit messaging, Hangfire background jobs, SOAP integrations, shared NuGet libraries and 60% xUnit test coverage.",
-      tags: [".NET 10", "CQRS", "gRPC", "MassTransit", "RabbitMQ", "Redis", "Hangfire", "MongoDB", "Docker"],
+      name: "EcoHubProcess (Insurer–Broker File Exchange Platform)",
+      description: "Microservice platform where Swiss insurers and brokers securely exchange XML business processes via DXP. CQRS-based file exchange with acknowledgment over RabbitMQ/MassTransit, gRPC, Hangfire jobs, SOAP integrations, shared NuGet libraries and 60% xUnit coverage, with an Angular 21 frontend — deployed on Azure AKS with Azure B2C.",
+      tags: [".NET 10", "Angular 21", "CQRS", "gRPC", "MassTransit", "RabbitMQ", "Redis", "Hangfire", "MongoDB", "Docker", "Azure AKS", "Azure B2C"],
       github: "",
       live: ""
     },
