@@ -10,9 +10,7 @@ window.PORTFOLIO = {
   resume: "assets/Md-Atiqur-Rahman-CV.pdf", // "Download CV" buttons are hidden while empty
 
   about: [
-    "I'm a software engineer building high-performance web applications with ASP.NET Core and Angular on SQL Server, Oracle and MongoDB.",
-    "At SELISE Digital Platforms I work with Swiss and German clients — breaking legacy monoliths into domain-driven microservices, designing secure APIs with OAuth2, OIDC and PKCE, building third-party integrations (Teams, calendar, malware scanning) and leading security remediation across the platform.",
-    "I enjoy solution architecture, empowering teams to take ownership, and using emerging tools — including AI-agentic, spec-driven development — to solve complex, real-world problems."
+    "Senior Software Engineer architecting and delivering scalable, high-performance web applications using ASP.NET Core, Angular, Web API, and Entity Framework, integrated with SQL Server, Oracle, and MongoDB. Specialized in microservices architecture, Domain-Driven Design (DDD), event-driven systems, distributed tracing with OpenTelemetry, and secure API design, with a proven track record of delivering high-quality software across enterprise and remittance/financial systems. Forward-thinking and adaptable in dynamic environments, with hands-on experience driving architectural decisions, mentoring within the team, and leading security and system improvements. Passionate about clean code, system design, and engineering excellence, and committed to continuous technical growth."
   ],
 
   stats: [
@@ -28,11 +26,11 @@ window.PORTFOLIO = {
   ],
 
   skills: [
-    { group: "Backend", items: ["C#", "ASP.NET Core", "ASP.NET MVC", "Web API", "Entity Framework", "ADO.NET", "CQRS", "Event-driven", "Distributed services", "gRPC", "MassTransit", "RabbitMQ", "Redis", "FusionCache", "Webhooks", "SignalR", "Hangfire", "xUnit"] },
+    { group: "Backend", items: ["C#", "ASP.NET Core", "ASP.NET MVC", "Web API", "Entity Framework", "ADO.NET", "Microservices", "DDD", "CQRS", "Event-driven", "Distributed services", "gRPC", "MassTransit", "RabbitMQ", "Redis", "FusionCache", "Webhooks", "SignalR", "Hangfire", "xUnit"] },
     { group: "Frontend", items: ["Angular", "AngularJS", "JavaScript", "jQuery", "HTML5", "CSS3"] },
     { group: "Database", items: ["SQL Server", "Oracle", "MongoDB"] },
     { group: "Cloud & DevOps", items: ["Microsoft Azure (AZ-104)", "Azure Functions", "Event Grid", "Virtual Machines", "Storage", "Docker", "Git", "CI/CD pipelines"] },
-    { group: "Observability & Analytics", items: ["OpenTelemetry", "Datadog", "Seq", "Matomo"] },
+    { group: "Observability & Analytics", items: ["OpenTelemetry (distributed tracing)", "Datadog", "Seq", "Matomo"] },
     { group: "Security & Identity", items: ["OAuth2", "OpenID Connect", "PKCE", "JWT", "Keycloak", "SAML / SSO", "Pentest remediation"] },
     { group: "AI Tools", items: ["GitHub Copilot", "Claude AI", "BMAD-METHOD", "Spec-driven development", "Gemini API"] },
     { group: "Reporting", items: ["RDLC", "Crystal Reports", "HTML to PDF (Gotenberg)"] }
