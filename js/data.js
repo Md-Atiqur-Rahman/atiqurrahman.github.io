@@ -47,13 +47,6 @@ window.PORTFOLIO = {
       points: [],
       projects: [
         {
-          name: "PDF Generator – Event-Driven Document Generation Microservice",
-          client: "Standalone microservice (SELISE Group)",
-          points: [
-            "Architected a standalone, event-driven PDF Generator microservice integrating STS token authentication, dynamic JSON schema-based metadata generation, a dynamic Liquid template engine, Gotenberg, MassTransit, Redis, webhooks and a notification client."
-          ]
-        },
-        {
           name: "EcoHubProcess (Insurer–Broker File Exchange Platform)",
           client: "Team: EcoHubProcess (SELISE Group) | For the Swiss Insurance & Broker Market",
           points: [
@@ -63,6 +56,13 @@ window.PORTFOLIO = {
             "Designed integration points with core ecosystem services — SELISE Blocks, EcoHub, SendGrid and Gotenberg — positioning EcoHubProcess as a well-bounded system within the broader EcoHub ecosystem.",
             "Collaborated with product and architecture teams to translate epic-level requirements into implementation plans, following Agile/Scrum practices (quarterly planning, sprint planning, daily scrums) for iterative delivery.",
             "Deployed and operated services on Microsoft Azure (Kubernetes/AKS) with Azure B2C authentication, ensuring secure, reliable data exchange across insurers, brokers and software vendors."
+          ]
+        },
+        {
+          name: "PDF Generator – Event-Driven Document Generation Microservice",
+          client: "Standalone microservice (SELISE Group)",
+          points: [
+            "Architected a standalone, event-driven PDF Generator microservice integrating STS token authentication, dynamic JSON schema-based metadata generation, a dynamic Liquid template engine, Gotenberg, MassTransit, Redis, webhooks and a notification client."
           ]
         }
       ]
