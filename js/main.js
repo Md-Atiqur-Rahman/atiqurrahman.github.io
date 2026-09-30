@@ -84,6 +84,53 @@
   $("projectsPro").innerHTML = projectsOf("professional", 0);
   $("projectsPersonal").innerHTML = projectsOf("personal", 3);
 
+  // ---------- Life at work (photo gallery + lightbox) ----------
+  var photos = [];   // flat list, so the viewer can step across companies
+  $("gallery").innerHTML = (d.gallery || []).map(function (g) {
+    return '<div class="gallery-group"><h3 class="sub-title reveal">' + esc(g.company) + "</h3>" +
+      '<div class="gallery-grid">' + g.photos.map(function (p) {
+        var i = photos.push({ src: p.src, caption: p.caption, company: g.company }) - 1;
+        return '<button type="button" class="gallery-item reveal" data-index="' + i + '" aria-label="Open photo: ' + esc(p.caption) + '">' +
+          '<img src="' + esc(p.src) + '" alt="' + esc(p.caption) + '" loading="lazy" decoding="async" />' +
+          '<span class="gallery-caption">' + esc(p.caption) + "</span></button>";
+      }).join("") + "</div></div>";
+  }).join("");
+
+  var lb = $("lightbox"), lbImg = $("lbImg"), lbCaption = $("lbCaption"), current = 0, lastFocus = null;
+  function showPhoto(i) {
+    current = (i + photos.length) % photos.length;
+    var p = photos[current];
+    lbImg.src = p.src;
+    lbImg.alt = p.caption;
+    lbCaption.textContent = p.caption + " — " + p.company + " (" + (current + 1) + "/" + photos.length + ")";
+  }
+  function openLightbox(i) {
+    lastFocus = document.activeElement;
+    showPhoto(i);
+    lb.hidden = false;
+    document.body.classList.add("no-scroll");
+    $("lbClose").focus();
+  }
+  function closeLightbox() {
+    lb.hidden = true;
+    document.body.classList.remove("no-scroll");
+    if (lastFocus) lastFocus.focus();
+  }
+  $("gallery").addEventListener("click", function (e) {
+    var item = e.target.closest(".gallery-item");
+    if (item) openLightbox(+item.getAttribute("data-index"));
+  });
+  $("lbClose").addEventListener("click", closeLightbox);
+  $("lbPrev").addEventListener("click", function () { showPhoto(current - 1); });
+  $("lbNext").addEventListener("click", function () { showPhoto(current + 1); });
+  lb.addEventListener("click", function (e) { if (e.target === lb) closeLightbox(); });
+  document.addEventListener("keydown", function (e) {
+    if (lb.hidden) return;
+    if (e.key === "Escape") closeLightbox();
+    else if (e.key === "ArrowLeft") showPhoto(current - 1);
+    else if (e.key === "ArrowRight") showPhoto(current + 1);
+  });
+
   // ---------- Education & Training ----------
   function eduItem(e) {
     return '<div class="card edu-item reveal"><div class="edu-head"><h4>' + esc(e.title) + '</h4><span class="tl-period mono">' + esc(e.period) + "</span></div>" +

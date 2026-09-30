@@ -110,6 +110,38 @@ window.PORTFOLIO = {
     }
   ],
 
+  // "Life at work" photo section — shown in this order; edit captions freely
+  gallery: [
+    {
+      company: "SELISE Digital Platforms",
+      photos: [
+        { src: "assets/img/offices/selise/1.jpeg", caption: "Recognition on stage at INB Gala 2025" },
+        { src: "assets/img/offices/selise/2.jpeg", caption: "Award at the SELISE cricket tournament" },
+        { src: "assets/img/offices/selise/3.jpeg", caption: "The Insurance & Banking team at INB Gala 2025" },
+        { src: "assets/img/offices/selise/4.jpeg", caption: "Team outing with SELISE Insurance & Banking" }
+      ]
+    },
+    {
+      company: "ERA InfoTech Ltd.",
+      photos: [
+        { src: "assets/img/offices/era/1.jpeg", caption: "Farewell celebration with the team" },
+        { src: "assets/img/offices/era/2.jpeg", caption: "A farewell gift from colleagues" },
+        { src: "assets/img/offices/era/3.jpeg", caption: "ERA Tigers — 1st runner-up in inter-company cricket" },
+        { src: "assets/img/offices/era/4.jpeg", caption: "With the team at the ERA office" },
+        { src: "assets/img/offices/era/5.jpeg", caption: "Team photo at ERA InfoTech" },
+        { src: "assets/img/offices/era/6.jpeg", caption: "Celebrating ERA InfoTech's 19th anniversary" },
+        { src: "assets/img/offices/era/7.jpg", caption: "Team tour — leaving our comfort zone" }
+      ]
+    },
+    {
+      company: "Databiz Software Ltd.",
+      photos: [
+        { src: "assets/img/offices/databiz/1.jpg", caption: "Celebrating together at Databiz" },
+        { src: "assets/img/offices/databiz/2.jpg", caption: "Office celebration with the Databiz team" }
+      ]
+    }
+  ],
+
   // type: "professional" (client / employer work) or "personal" (own & open-source work)
   projects: [
     {
