@@ -2,7 +2,7 @@
 
 Personal portfolio of **MD Atiqur Rahman**. It's a static HTML/CSS/JS site with no build step.
 
-Live: https://md-atiqur-rahman.github.io/atiqurrahman.github.io/
+Live: https://md-atiqur-rahman.github.io/
 
 ## Editing content
 All text (bio, skills, experience, projects, education, links) lives in **`js/data.js`**. Edit that file and push.

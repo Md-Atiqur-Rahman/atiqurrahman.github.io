@@ -10,7 +10,7 @@ window.PORTFOLIO = {
   resume: "assets/Md-Atiqur-Rahman-CV.pdf", // "Download CV" buttons are hidden while empty
 
   about: [
-    "Senior Software Engineer architecting and delivering scalable, high-performance web applications using ASP.NET Core, Angular, Web API, and Entity Framework, integrated with SQL Server, Oracle, and MongoDB. Specialized in microservices architecture, Domain-Driven Design (DDD), event-driven systems, distributed tracing with OpenTelemetry, and secure API design, with a proven track record of delivering high-quality software across enterprise and remittance/financial systems. Forward-thinking and adaptable in dynamic environments, with hands-on experience driving architectural decisions, mentoring within the team, and leading security and system improvements. Passionate about clean code, system design, and engineering excellence, and committed to continuous technical growth."
+    "Software Engineer architecting and delivering scalable, high-performance web applications using ASP.NET Core, Angular, Web API, and Entity Framework, integrated with SQL Server, Oracle, and MongoDB. Specialized in microservices architecture, Domain-Driven Design (DDD), event-driven systems, distributed tracing with OpenTelemetry, and secure API design, with a proven track record of delivering high-quality software across enterprise and remittance/financial systems. Forward-thinking and adaptable in dynamic environments, with hands-on experience driving architectural decisions, mentoring within the team, and leading security and system improvements. Passionate about clean code, system design, and engineering excellence, and committed to continuous technical growth."
   ],
 
   stats: [
